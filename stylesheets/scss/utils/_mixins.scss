@@ -1,0 +1,11 @@
+@mixin gridSmall {
+  @for $i from 1 through 12 {
+    $value: ($i / 12) * 100% - 1;
+
+    .col-sm-#{$i} {
+      flex-basis: $value;
+      width: $value;
+      margin-right: 1%;
+    }
+  }
+}

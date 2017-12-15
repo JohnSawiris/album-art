@@ -1,0 +1,25 @@
+.navbar {
+  width: 100%;
+  text-align: center;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid $light-orange;
+  .links a {
+    font-family: $josef-font;
+    color: $white;
+    padding: 1.6rem;
+    text-decoration: none;
+    transition: all .4s ease-in-out;
+    &:hover {
+      color: $light-orange;
+    }
+  }
+  .plus {
+    font-size: 2rem;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

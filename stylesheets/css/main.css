@@ -1,0 +1,181 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  margin-right: -1rem; }
+  .row .col-sm-1 {
+    flex-basis: 7.3333333333%;
+    width: 7.3333333333%;
+    margin-right: 1%; }
+  .row .col-sm-2 {
+    flex-basis: 15.6666666667%;
+    width: 15.6666666667%;
+    margin-right: 1%; }
+  .row .col-sm-3 {
+    flex-basis: 24%;
+    width: 24%;
+    margin-right: 1%; }
+  .row .col-sm-4 {
+    flex-basis: 32.3333333333%;
+    width: 32.3333333333%;
+    margin-right: 1%; }
+  .row .col-sm-5 {
+    flex-basis: 40.6666666667%;
+    width: 40.6666666667%;
+    margin-right: 1%; }
+  .row .col-sm-6 {
+    flex-basis: 49%;
+    width: 49%;
+    margin-right: 1%; }
+  .row .col-sm-7 {
+    flex-basis: 57.3333333333%;
+    width: 57.3333333333%;
+    margin-right: 1%; }
+  .row .col-sm-8 {
+    flex-basis: 65.6666666667%;
+    width: 65.6666666667%;
+    margin-right: 1%; }
+  .row .col-sm-9 {
+    flex-basis: 74%;
+    width: 74%;
+    margin-right: 1%; }
+  .row .col-sm-10 {
+    flex-basis: 82.3333333333%;
+    width: 82.3333333333%;
+    margin-right: 1%; }
+  .row .col-sm-11 {
+    flex-basis: 90.6666666667%;
+    width: 90.6666666667%;
+    margin-right: 1%; }
+  .row .col-sm-12 {
+    flex-basis: 99%;
+    width: 99%;
+    margin-right: 1%; }
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+img {
+  max-width: 100%; }
+
+body {
+  background: #DBE6F6;
+  background: -webkit-linear-gradient(to right, #C5796D, #DBE6F6);
+  background: linear-gradient(to right, #C5796D, #DBE6F6);
+  font-family: "Raleway", sans-serif; }
+
+.wrapper {
+  width: 1000px;
+  margin: auto; }
+
+.card {
+  padding: .3rem .3rem 1rem;
+  background-color: #f7e3ce;
+  border-radius: 5px;
+  font-size: .9rem;
+  font-weight: 300; }
+
+.navbar {
+  width: 100%;
+  text-align: center;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #f7e3ce; }
+  .navbar .links a {
+    font-family: "Josefin Sans", sans-serif;
+    color: #fff;
+    padding: 1.6rem;
+    text-decoration: none;
+    transition: all .4s ease-in-out; }
+    .navbar .links a:hover {
+      color: #f7e3ce; }
+  .navbar .plus {
+    font-size: 2rem; }
+    .navbar .plus:hover {
+      text-decoration: none; }
+
+.overlay {
+  pointer-events: none;
+  display: flex;
+  opacity: 0;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  transition: all .5s ease-in-out;
+  z-index: 9999999; }
+  .overlay.show {
+    opacity: 1;
+    pointer-events: all; }
+  .overlay .album {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin: 3rem auto;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 2rem;
+    border-radius: 10px; }
+    .overlay .album h1 {
+      margin-bottom: 2rem; }
+    .overlay .album .input {
+      display: flex;
+      margin-bottom: 1rem; }
+      .overlay .album .input input {
+        padding: .5rem;
+        border-radius: 5px;
+        border: 1px solid transparent;
+        width: 50%;
+        font-size: .9rem;
+        margin: auto; }
+        .overlay .album .input input:focus {
+          outline: none;
+          border: 1px solid #2196f3; }
+
+.btn {
+  width: 25%;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: .9rem;
+  color: #fff;
+  transition: all .4s ease-in-out; }
+  .btn:focus {
+    outline: none; }
+
+.btn.ok {
+  background-color: green; }
+  .btn.ok:hover {
+    background-color: #035603; }
+
+.btn.cancel {
+  background-color: red; }
+  .btn.cancel:hover {
+    background-color: #c90000; }
+
+.header {
+  background-image: url("../../img/banner.jpeg");
+  height: 500px;
+  opacity: .6;
+  color: #fff;
+  padding: 10rem 3rem 1rem;
+  position: relative;
+  animation: slide 1.8s linear; }
+  .header h1 {
+    font-size: 4rem;
+    letter-spacing: 1rem; }
+
+@keyframes slide {
+  0% {
+    left: -100%; }
+  100% {
+    left: 0%; } }
+
+/*# sourceMappingURL=main.css.map */

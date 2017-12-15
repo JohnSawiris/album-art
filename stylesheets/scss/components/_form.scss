@@ -1,0 +1,48 @@
+.overlay {
+  pointer-events: none;
+  display: flex;
+  opacity: 0;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: $black;
+  font-family: $raleway-font;
+  font-weight: 600;
+  transition: all .5s ease-in-out;
+  z-index: 9999999;
+  &.show {
+    opacity: 1;
+    pointer-events: all;
+  }
+  .album {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin: 3rem auto;
+    background-color: $lighter-white;
+    padding: 2rem;
+    border-radius: 10px;
+    h1 {
+      margin-bottom: 2rem;
+    }
+    .input {
+      display: flex;
+      margin-bottom: 1rem;
+      input {
+        padding: .5rem;
+        border-radius: 5px;
+        border: 1px solid transparent;
+        width: 50%;
+        font-size: .9rem;
+        margin: auto;
+        &:focus {
+          outline: none;
+          border: 1px solid $blue;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.header {
+  background-image: url('../../img/banner.jpeg');
+  height: 500px;
+  opacity: .6;
+  color: $white;
+  padding: 10rem 3rem 1rem;
+  position: relative;
+  animation: slide 1.8s linear;
+  h1 {
+    font-size: 4rem;
+    letter-spacing: 1rem;
+  }
+}
+
+@keyframes slide {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
